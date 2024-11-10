@@ -1,0 +1,30 @@
+.airdropSection{
+    background-image: url("../../../public/home/roadmap/roadmapBg.png");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow-x: clip;
+    .imageContainer{
+        position: relative;
+    }
+    .imageContainer::before{
+        content: "";
+        position: absolute;
+        width: 320px;
+        height: 300px;
+        border-radius: 100%;
+        top: 16%;
+        z-index: -1;
+        background: linear-gradient(180deg, #071A7B 10.65%, #B53EEC 100%);
+        opacity: 0.3;
+
+    }
+}
+.airdropSection::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(42, 11, 83, 0.937);
+    z-index: 0;
+}
