@@ -1,0 +1,9 @@
+.tokenomicsContainer {
+  background: linear-gradient(180deg, #2f116f45 0%, #b53eec5a 100%);
+  .tokenomicsData {
+    &:hover {
+      background: linear-gradient(164.98deg, #a43be1 21.46%, #5a207b 89.18%);
+      border-radius: 1.5rem;
+    }
+  }
+}

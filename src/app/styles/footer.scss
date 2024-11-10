@@ -1,0 +1,48 @@
+
+.footer-container {
+  color: #fff;
+  margin: 50px 40px;
+  .input-field {
+    width: 100%;
+    background-color: white;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding-left: 1rem;
+    &:focus,
+    &:active {
+      outline: none;
+      border: none;
+      box-shadow: none;
+      &::placeholder {
+        font-size: 14px;
+        color: #fff;
+      }
+    }
+  }
+  .light-input-field {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding-left: 1rem;
+    color: white;
+    &:focus,
+    &:active {
+      outline: none;
+      border: none;
+      box-shadow: none;
+      &::placeholder {
+        font-size: 14px;
+        color: #757575;
+      }
+    }
+  }
+  @media (min-width: 1280px) {
+    margin: 70px 75px;
+  }
+  @media (min-width: 1600px) {
+    margin: 70px auto;
+    max-width: 1400px;
+  }
+}

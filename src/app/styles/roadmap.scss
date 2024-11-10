@@ -1,0 +1,171 @@
+.roadmap-container {
+  position: relative;
+  background-image: url("../../../public/home/roadmap/roadmapBg.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  h1 {
+    text-align: center;
+    font-size: 36px;
+    // margin-bottom: 1rem;
+  }
+
+  .slider_holder {
+    position: relative;
+
+    &:after {
+      z-index: -1;
+      position: absolute;
+      top: 120px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background-color: #a43be1;
+      width: 100%;
+      content: "";
+    }
+  }
+
+  .swiper-slide .item {
+    border-radius: 10px;
+    margin-top: 6rem;
+    position: relative;
+    height: 400px;
+    width: 350px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    box-sizing: border-box;
+    $border: 5px;
+    color: #fff;
+    background: linear-gradient(to bottom, black, #500016);
+    background-clip: padding-box;
+    border: solid $border transparent;
+    border-radius: 1em;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      margin: -$border;
+      border-radius: inherit;
+      background: linear-gradient(to bottom, #a43be1, rgba(94, 3, 28, 0.22));
+    }
+  }
+
+  .swiper-wrapper {
+    padding: 60px 20px;
+    color: #fff;
+  }
+
+  .swiper-slide .icon {
+    position: absolute;
+    display: block;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 100%;
+    bottom: 100%;
+    margin-bottom: 30px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      border-radius: 100%;
+      background-color: #500016;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+    }
+  }
+
+  // .slider_holder {
+  //   padding-top: 60px !important;
+  // }
+
+  .swiper-slide .text {
+    width: 100vw;
+    margin-bottom: 55px;
+    font-size: 1.5rem;
+    background: transparent;
+    &:after {
+      background: transparent;
+    }
+  }
+
+  .swiper-slide .text.current {
+    margin-bottom: 90px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    background: linear-gradient(to right, #dd1b50, transparent);
+    width: max-content;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 0.2rem 1rem;
+    height: auto;
+  }
+
+  .swiper-slide .phase {
+    display: block;
+    width: fit-content;
+    max-width: 100%;
+    color: whitesmoke;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 0 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 40px;
+    line-height: 40px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .swiper-slide .item_in {
+    padding: 30px 40px 40px;
+    color: whitesmoke;
+    ul {
+      li {
+        margin: 1rem 0;
+      }
+    }
+  }
+
+  .swiper-slide .date {
+    margin: 0;
+    margin-bottom: 7px;
+    color: rgb(150, 150, 150);
+  }
+
+  .swiper-slide .title {
+    margin-bottom: 10px;
+  }
+}
+.roadmap-container::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(42, 11, 83, 0.937);
+  z-index: 0;
+}
+
