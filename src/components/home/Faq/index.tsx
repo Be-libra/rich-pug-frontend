@@ -36,8 +36,16 @@ const Faq: FunctionComponent = () => {
     ...data,
   };
   const [FAQ, setFAQ] = useState(0);
+
+  const updateFaq = () => {
+    if (window.location.pathname === "how-to-buy") {
+      setFAQ(1);
+    } else {
+      setFAQ(0);
+    }
+  };
   useEffect(() => {
-    window.location.pathname === "how-to-buy" ? setFAQ(1) : setFAQ(0);
+    updateFaq();
   }, []);
   return (
     <>
