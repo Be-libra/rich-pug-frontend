@@ -12,7 +12,7 @@ const Pugonomics: FunctionComponent = () => {
     <>
       <div className="w-full flex justify-center mt-20 mb-20">
         <div className="container">
-          <div className="w-full flex justify-between items-center flex-wrap flex-row">
+          <div className="w-full flex justify-between items-center flex-wrap-reverse flex-row">
             <div className="basis-2/2 lg:basis-1/2 w-full lg:pse-3">
               <div
                 className={`w-full my-3 flex justify-center items-center relative`}

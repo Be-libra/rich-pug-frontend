@@ -19,7 +19,7 @@ const Home: FunctionComponent = () => {
       <div className="w-full flex flex-col justify-end relative">
         <div className="absolute top-0 left-0 w-full"><Navbar /></div>
         <div className="w-full">
-          <Image src={cover} alt="cover" objectFit="cover" className="w-full" />
+          <Image src={cover} alt="cover" objectFit="cover" className="w-auto md:w-full object-cover h-[70vh] md:h-auto" />
         </div>
 
         <div className="h-full -mt-20 relative">
