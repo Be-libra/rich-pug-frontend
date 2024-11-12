@@ -34,7 +34,7 @@ export default function Navbar() {
         </div>
 
         <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end">
-          <div className="hidden lg:flex lg:gap-x-10">
+          <div className="hidden lg:flex lg:gap-x-10 xl:gap-x-12">
             <a href="#" className="text-md/6 font-semibold text-white">
               Home
             </a>
@@ -44,10 +44,10 @@ export default function Navbar() {
             <a href="#" className="text-md/6 font-semibold text-white">
               Roadmap
             </a>
-            <a href="#" className="text-md/6 font-semibold text-white">
+            <a href="#" className="text-md/6 font-semibold text-white whitespace-nowrap">
               About Us
             </a>
-            <a href="#" className="text-md/6 font-semibold text-white">
+            <a href="#" className="text-md/6 font-semibold text-white whitespace-nowrap">
               Contact Us
             </a>
           </div>

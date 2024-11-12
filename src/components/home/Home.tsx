@@ -10,8 +10,8 @@ import Pugonomics from "./Pugonomics";
 import Roadmap from "./Roadmap";
 import Faq from "./Faq";
 import Whitepaper from "./Whitepaper";
-import Footer from "./Footer";
 import Navbar from "../Navbar";
+import Footer from "../Footer";
 
 const Home: FunctionComponent = () => {
   return (

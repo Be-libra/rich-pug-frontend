@@ -41,8 +41,9 @@ const Pugonomics: FunctionComponent = () => {
                           className="me-5 h-[30px] relative mt-2"
                         />
                         <p className="text-lg font-semibold">
-                          Total Airdop 40% <br />
-                          Other Rewards 20%
+                          40% Airdop
+                          <br />
+                          20% Rewards
                         </p>
                       </div>
                       <div>
@@ -63,35 +64,14 @@ const Pugonomics: FunctionComponent = () => {
                         <p className="text-lg font-semibold">
                           10% Presale
                           <br />
-                          50% Unlocked
+                          50% Unlocked @TGE
                           <br />
-                          @TGE5% every week
+                          Rest 5% every week
                         </p>
                       </div>
                       <div>
                         <p className="text-lg">Amount</p>
                         <p className="text-lg">10,00,00,000</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className={`${styles.tokenomicsData} w-full px-5`}>
-                    <div className="w-full flex justify-between border-b-2 py-4">
-                      <div className="flex">
-                        <Image
-                          src={dog}
-                          alt="dog"
-                          width={30}
-                          className="me-5 h-[30px] relative mt-2"
-                        />
-                        <p className="text-lg font-semibold">
-                          5% Liquidity
-                          <br />
-                          Fully Unlocked @TGE
-                        </p>
-                      </div>
-                      <div>
-                        <p className="text-lg">Amount</p>
-                        <p className="text-lg">5,00,00,000</p>
                       </div>
                     </div>
                   </div>
@@ -107,6 +87,8 @@ const Pugonomics: FunctionComponent = () => {
                         <p className="text-lg font-semibold">
                           5% Marketing
                           <br />
+                          12 months vesting
+                          <br />
                           Fully Unlocked @TGE
                         </p>
                       </div>
@@ -116,9 +98,7 @@ const Pugonomics: FunctionComponent = () => {
                       </div>
                     </div>
                   </div>
-                  <div
-                    className={`${styles.tokenomicsData} w-full px-5 rounded-3xl`}
-                  >
+                  <div className={`${styles.tokenomicsData} w-full px-5`}>
                     <div className="w-full flex justify-between border-b-2 py-4">
                       <div className="flex">
                         <Image
@@ -128,16 +108,15 @@ const Pugonomics: FunctionComponent = () => {
                           className="me-5 h-[30px] relative mt-2"
                         />
                         <p className="text-lg font-semibold">
-                          10% Team
+                          5% Team
+                          <br />6 month cliff
                           <br />
-                          6 months cliff,
-                          <br />
-                          48 months vesting
+                          Fully Unlocked @TGE
                         </p>
                       </div>
                       <div>
                         <p className="text-lg">Amount</p>
-                        <p className="text-lg">10,00,00,000</p>
+                        <p className="text-lg">5,00,00,000</p>
                       </div>
                     </div>
                   </div>
@@ -153,14 +132,15 @@ const Pugonomics: FunctionComponent = () => {
                           className="me-5 h-[30px] relative mt-2"
                         />
                         <p className="text-lg font-semibold">
-                          10% Treasury 6 months cliff,
+                          15% Treasury
+                          <br />6 months cliff,
                           <br />
                           48 months vesting
                         </p>
                       </div>
                       <div>
                         <p className="text-lg">Amount</p>
-                        <p className="text-lg">10,00,00,000</p>
+                        <p className="text-lg">15,00,00,000</p>
                       </div>
                     </div>
                   </div>

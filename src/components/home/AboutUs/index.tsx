@@ -16,7 +16,7 @@ const AboutUs: FunctionComponent = () => {
               <Image src={title} alt="about us" width={200} />
               <p className="mt-3">
                 In the shiny city of Glitzville, there lived a pug named Rich
-                Pug😊. He was the boss🐶 of the biggest casino, Pug&nbsp;s
+                Pug😊. He was the boss🐶 of the biggest casino, Pug&apos;s
                 Paradise🥰. He had lots of money, fancy clothes, and a perfect
                 life. But💸 one day💸, he noticed many people in the city were
                 poor😷 and struggling. This made him feel sad.
@@ -29,7 +29,7 @@ const AboutUs: FunctionComponent = () => {
                   together.🤝{" "}
                 </p>
                 <p className="mt-5">
-                  With a happy smile,😁 Rich Pug said, “A real boss isn&nbsp;t
+                  With a happy smile,😁 Rich Pug said, “A real boss isn&apos;t
                   the one who wins alone, but the one who helps others win too.”
                   And just like that 👉the Rich Pug became a symbol of
                   hope,👈 showing that life is better when everyone wins
