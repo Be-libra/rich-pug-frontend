@@ -1,0 +1,16 @@
+.mystatsContainer{
+    position: relative;
+
+}
+.mystatsContainer::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #2F116F 0%, #B53EEC 100%);
+    opacity: 0.29;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    top: 0;
+    left: 0;
+    z-index: 0;
+}

@@ -7,20 +7,23 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import title from "../../../public/home/whitepaper/title.png";
 import Image from "next/image";
 
+import styles from "./navbar.module.scss"
+import Link from "next/link";
+
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-transparent">
+    <header className={`${styles.navbar}`}>
       <nav
         aria-label="Global"
-        className="mx-auto flex w-full items-center justify-between px-5 pt-0 pb-0 lg:px-4"
+        className="mx-auto flex w-full items-center justify-between px-5 pt-0 pb-0 lg:px-12"
       >
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
-            <Image alt="logo" src={title} className="h-20 w-auto" />
-          </a>
+            <Image alt="logo" src={title} className="h-16 lg:h-20 w-auto" />
+          </Link>
         </div>
         <div className="flex lg:hidden">
           <button
