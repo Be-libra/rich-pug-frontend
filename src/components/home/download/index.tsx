@@ -11,7 +11,7 @@ const Download: FunctionComponent = () => {
   return (
     <>
       <div
-        className={`${styles.downloadSection} w-full flex justify-center relative`}
+        className={`${styles.downloadSection} w-full flex justify-center relative mt-10`}
       >
         <div className={`${styles.overlay}`}></div>
         <div className="container">
