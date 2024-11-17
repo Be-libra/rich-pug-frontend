@@ -25,14 +25,14 @@ const Airdrop: FunctionComponent = () => {
         <Image
           src={title}
           alt="airdrop title"
-          className="w-[320px] md:w-[450px] lg:w-[700px] z-10 mt-16 relative"
+          className="w-[320px] md:w-[450px] lg:w-[700px] z-10 mt-4 md:mt-16 relative"
         />
         <div
           className={`flex justify-center items-center relative z-10 ${styles.imageContainer}`}
         >
           <Image src={character} alt="airdrop char" className="w-[320px]" />
         </div>
-        <div className="flex-container-between flex items-center relative z-10 mt-8 w-full md:mt-20 lg:mt-16 lg:w-auto">
+        <div className="flex-container-between flex items-center relative z-10 mt-8 w-full px-4 md:mt-20 lg:mt-16 lg:w-auto">
           <Link
             href="https://x.com/richpugtoken"
             target={"_blank"}
