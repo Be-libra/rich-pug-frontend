@@ -16,6 +16,7 @@ const HowToBuy = () => {
 
   const [modal, setModal] = React.useState('coming-soon');
   useEffect(() => {
+    // eslint-disable-next-line
     modal === 'hello' && setModal('hello');
   }, [modal]);
   const mobileData = [
