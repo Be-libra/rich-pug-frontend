@@ -1,3 +1,19 @@
+.flex-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container-between{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-container-start {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
 .marquee {
   overflow: hidden;
   white-space: nowrap;

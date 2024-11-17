@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
 import { FunctionComponent } from "react";
@@ -5,14 +6,19 @@ import { FaInstagram, FaTelegram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { FaMedium } from "react-icons/fa6";
 
 import title from "../../../public/staking/title.png";
-import Navbar from "../Navbar";
+
+import dynamic from "next/dynamic";
+
+// import { Footer } from 'components';
+const Navbar = dynamic(() => import('../Navbar'), { ssr: false });
+
 
 const StakingHero: FunctionComponent = () => {
   return (
     <>
       <section className="staking-hero-section relative w-100 flex justify-center font-[family-name:var(--font-harngton-sans)]">
         <div className="absolute top-0 left-0 w-full ">
-          <Navbar />
+          <Navbar  />
         </div>
         <div className="staking-hero-container container flex justify-center md:mt-28 mt-16">
           <div className="wrapper flex flex-col items-center justify-center p-4">

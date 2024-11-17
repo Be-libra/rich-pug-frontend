@@ -13,8 +13,8 @@ const PugToken: FunctionComponent = () => {
           <div className="w-full flex justify-between items-center flex-wrap flex-row">
             <div className="basis-2/2 lg:basis-1/2 w-full">
               <div className="w-full my-3 px-3 md:px-0 lg:pe-3">
-                <Image src={title} alt="about us" width={240} />
-                <p className="mt-3">
+                <Image src={title} alt="about us" width={240} className="mx-auto md:mx-0" />
+                <p className="mt-3 text-center md:text-start">
                   Introducing the Rich Pug 🐶 Token (PUG), a revolutionary
                   cryptocurrency designed to enhance the gaming experience while
                   harnessing the power of meme culture. With $PUG, you can

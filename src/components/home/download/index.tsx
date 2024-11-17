@@ -16,7 +16,7 @@ const Download: FunctionComponent = () => {
         <div className={`${styles.overlay}`}></div>
         <div className="container">
           <div className="flex flex-row flex-wrap-reverse justify-between relative z-10">
-            <div className="basis-2/2 lg:basis-1/2 w-full lg:pe-3">
+            <div className="basis-2/2 lg:basis-1/2 w-full lg:pe-3 flex justify-center md:justify-start">
               <Image src={downloadApp} alt="download-img" objectFit="contain" />
             </div>
             <div className="basis-2/2 lg:basis-1/2 w-full lg:ps-3 flex items-center">

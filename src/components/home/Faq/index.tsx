@@ -45,7 +45,7 @@ const Faq: FunctionComponent = () => {
   }, []);
   return (
     <>
-      <div className="w-full flex justify-center mt-10">
+      <div className="w-full flex justify-center mt-3">
         <div className="container flex flex-col items-center faq-container">
           <Image src={title} alt="faq" width={200} />
           <p className="text-center max-w-[850px] mt-4 px-0 text-[#C9C4BD]">
@@ -62,6 +62,9 @@ const Faq: FunctionComponent = () => {
                     <p className="font-bold">{item.question}</p>
                     <IoAddCircleOutline className="hidden lg:block" />
                   </summary>
+                  <div className='answer'>
+                <span className='block'>{item.answer}</span>
+              </div>
                   
                 </details>
               );

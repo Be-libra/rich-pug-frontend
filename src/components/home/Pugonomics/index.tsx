@@ -10,7 +10,7 @@ import styles from "./pugonomics.module.scss";
 const Pugonomics: FunctionComponent = () => {
   return (
     <>
-      <div className="w-full flex justify-center mt-20 mb-20">
+      <div className="w-full flex justify-center mt-10 md:mt-20 mb-3 md:mb-20">
         <div className="container">
           <div className="w-full flex justify-between items-center flex-wrap-reverse flex-row">
             <div className="basis-2/2 lg:basis-1/2 w-full lg:pse-3">
@@ -27,7 +27,7 @@ const Pugonomics: FunctionComponent = () => {
             </div>
             <div className="basis-2/2 lg:basis-1/2 w-full">
               <div className="w-full my-3 px-3 md:px-0 lg:ps-3">
-                <Image src={title} alt="about us" width={240} />
+                <Image src={title} alt="about us" width={240} className="mx-auto md:mx-0" />
                 <div
                   className={`${styles.tokenomicsContainer} rounded-3xl w-full pb-5`}
                 >
@@ -72,6 +72,28 @@ const Pugonomics: FunctionComponent = () => {
                       <div>
                         <p className="text-lg">Amount</p>
                         <p className="text-lg">10,00,00,000</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className={`${styles.tokenomicsData} w-full px-5`}>
+                    <div className="w-full flex justify-between border-b-2 py-4">
+                      <div className="flex">
+                        <Image
+                          src={dog}
+                          alt="dog"
+                          width={30}
+                          className="me-5 h-[30px] relative mt-2"
+                        />
+                        <p className="text-lg font-semibold">
+                          5% Liquidity
+                          <br />
+                         Fully Unlocked @TGE
+                          
+                        </p>
+                      </div>
+                      <div>
+                        <p className="text-lg">Amount</p>
+                        <p className="text-lg">5,00,00,000</p>
                       </div>
                     </div>
                   </div>

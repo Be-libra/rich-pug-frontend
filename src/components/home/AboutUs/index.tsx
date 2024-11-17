@@ -9,12 +9,12 @@ import Image from "next/image";
 const AboutUs: FunctionComponent = () => {
   return (
     <>
-      <div className="mt-20 w-full flex justify-center overflow-clip">
+      <div className="mt-20 w-full flex justify-center overflow-clip" id="about-us">
         <div className="container flex justify-between items-center flex-wrap flex-row">
           <div className="basis-2/2 lg:basis-1/2 w-full">
             <div className="w-full my-3 px-3 md:px-0 lg:pe-3">
-              <Image src={title} alt="about us" width={200} />
-              <p className="mt-3">
+              <Image src={title} alt="about us" width={200} className="mx-auto md:mx-0" />
+              <p className="mt-3 text-center md:text-start">
                 In the shiny city of Glitzville, there lived a pug named Rich
                 Pug😊. He was the boss🐶 of the biggest casino, Pug&apos;s
                 Paradise🥰. He had lots of money, fancy clothes, and a perfect
