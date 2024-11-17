@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import React, {  useState } from 'react';
+import React from 'react';
 // import { ImSpinner2 } from 'react-icons/im';
 
 import Question from '@/components/bulletQuestions';
@@ -9,7 +9,7 @@ import title from "../../../public/home/whitepaper/title.png"
 
 
 
-import { BuyFormValues, User } from '@/types';
+import { BuyFormValues } from '@/types';
 import Link from 'next/link';
 
 const Confirmation = ({
@@ -22,7 +22,9 @@ const Confirmation = ({
   data: BuyFormValues;
 }) => {
 
-  const [showLoginModal, setShowLoginModal] = useState<boolean>(false);
+  console.log(nextState);
+
+  // const [showLoginModal, setShowLoginModal] = useState<boolean>(false);
 
 
   return (

@@ -17,6 +17,8 @@ export default function BuyPage() {
   const [referralCode] = useState<string | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
 
+  console.log(loading);
+
   const [formData, setFormData] = useState<BuyFormValues>({
     numberOfToken: '',
     amount: '',

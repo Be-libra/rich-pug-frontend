@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import { useEffect } from 'react';
 
 
@@ -12,7 +11,9 @@ const SikaDetails: React.FC<SikaDetailsTypes> = ({
   setModalType,
 }) => {
   useEffect(() => {
+    // eslint-disable-next-line @typescript-eslint/no-unused-expressions
     setModalType ? '' : '';
+    // eslint-disable-next-line @typescript-eslint/no-unused-expressions
     handleClick ? '' : '';
   });
   return (

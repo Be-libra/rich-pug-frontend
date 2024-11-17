@@ -28,6 +28,7 @@ interface CustomSelectProps {
   options: string[];
 }
 
+// eslint-disable-next-line
 const CustomSelect: React.FC<CustomSelectProps> = ({ field, options }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -134,7 +135,7 @@ const NumberOfTokenField = () => {
       return;
     }
     const newNumberOfTokens = parseInt(e.target.value ?? 0);
-    const newAmount = (newNumberOfTokens * 0.015) / values.currency.price ?? 0;
+    const newAmount = ((newNumberOfTokens * 0.015) / values.currency.price) || 0;
     if (newNumberOfTokens < +minToken) {
       setFieldValue('isBonus', false);
     }
@@ -172,7 +173,7 @@ const AmountField = () => {
       return;
     }
     const newAmount = parseFloat(e.target.value ?? 0);
-    const newNumberOfTokens = newAmount * values.currency.price * 66.6667 ?? 0;
+    const newNumberOfTokens = (newAmount * values.currency.price * 66.6667) || 0;
     if (newNumberOfTokens < +minToken) {
       setFieldValue('isBonus', false);
     }
@@ -238,6 +239,8 @@ const Buy = ({
 
   const isReferral = ['Yes', 'No'];
 
+  console.log(isReferral, data);
+
 
   return (
     <div className='buy-wrapper mt-3 mb-8 lg:flex-[1] font-[family-name:var(--font-harngton-sans)]'>
@@ -276,6 +279,7 @@ const Buy = ({
           touched,
           values,
           resetForm,
+          // eslint-disable-next-line @typescript-eslint/no-unused-vars
           handleChange,
           setFieldError,
         }) => (

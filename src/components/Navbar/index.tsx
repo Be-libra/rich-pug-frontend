@@ -20,14 +20,14 @@ import { Provider, useAppKitConnection } from "@reown/appkit-adapter-solana/reac
 import { PublicKey } from "@solana/web3.js";
 import { FaArrowRightFromBracket } from "react-icons/fa6";
 
-interface INavbar {
-  handleConnectWallet?: () => void;
-}
+let window: Window & typeof globalThis;
 
-var window: Window & typeof globalThis;
-
-export default function Navbar({ handleConnectWallet }: INavbar) {
+export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  if(window){
+    // do nothing
+}
 
   const { open } = useAppKit();
   const { address, isConnected } = useAppKitAccount();
@@ -73,27 +73,27 @@ export default function Navbar({ handleConnectWallet }: INavbar) {
 
         <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end">
           <div className="hidden lg:flex lg:gap-x-10 xl:gap-x-12">
-            <a href="/" className="text-md/6 font-semibold text-white">
+            <Link href="/" className="text-md/6 font-semibold text-white">
               Home
-            </a>
+            </Link>
             <a href="#" className="text-md/6 font-semibold text-white">
               Whitepaper
             </a>
-            <a href="/airdrop" className="text-md/6 font-semibold text-white">
+            <Link href="/airdrop" className="text-md/6 font-semibold text-white">
               Airdrop
-            </a>
-            <a
+            </Link>
+            <Link
               href="/#about-us"
               className="text-md/6 font-semibold text-white whitespace-nowrap"
             >
               About Us
-            </a>
-            <a
+            </Link>
+            <Link
               href="/#footer"
               className="text-md/6 font-semibold text-white whitespace-nowrap"
             >
               Contact Us
-            </a>
+            </Link>
           </div>
           <a
             href="#"
