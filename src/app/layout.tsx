@@ -8,6 +8,7 @@ import "./styles/faq.scss";
 import "./styles/footer.scss"
 import "./styles/sika.scss";
 import "./styles/buy.scss"
+import "./styles/howtobuy.scss"
 // App.tsx
 import { createAppKit } from '@reown/appkit/react'
 import { SolanaAdapter } from '@reown/appkit-adapter-solana/react'
