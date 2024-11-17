@@ -1,0 +1,143 @@
+
+.buy-container {
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  color: white;
+  .heading {
+    font-size: 1.6rem;
+  line-height: 120%;
+  font-weight: 500;
+  //media queries for 1024px
+  @media (min-width: 1024px) {
+    font-size: 2.2rem;
+  }
+    margin: 1rem 0;
+  }
+  .progress-bar {
+    .active {
+      border: 1px solid;
+      div {
+        background-color: #A43BE1;
+      }
+    }
+  }
+  .input-field,
+  .select-field {
+    border-color: white;
+    border-width: 2px;
+    width: 100% !important;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    height: 2.3rem;
+    color: black;
+  }
+  input[type='radio'] {
+    color: white;
+  }
+  .btn-container {
+    button {
+      margin: 0;
+      width: 100%;
+      border-radius: 10px;
+      height: 3rem;
+      background: #A43BE1;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      transition: all 0.2s linear;
+      -webkit-transition: all 0.2s linear;
+      -moz-transition: all 0.2s linear;
+      -ms-transition: all 0.2s linear;
+      -o-transition: all 0.2s linear;
+      &:hover {
+        transform: scale(0.98);
+        -webkit-transform: scale(0.98);
+        -moz-transform: scale(0.98);
+        -ms-transform: scale(0.98);
+        -o-transform: scale(0.98);
+      }
+    }
+  }
+  // for right timer section
+  .hero-form {
+    position: relative;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+    flex-direction: column;
+    margin: 0 48px;
+    margin-top: 15px;
+    padding: 18px;
+    border: 1px solid #A43BE1;
+    background-color: rgba(0, 0, 0, 0.4);
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    .token-container {
+      z-index: -1;
+      div {
+        font-size: 12px;
+        margin: 8px 3px;
+        padding: 1px 10px;
+        border: 2px solid white;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+        div {
+          border: none;
+        }
+      }
+      .active-btn {
+        background-color: #A43BE1;
+      }
+    }
+  }
+  .timer-container {
+    h2 {
+      color: white;
+    }
+    .token {
+      margin: 0 4px;
+      h1 {
+        color: white;
+        font-size: 18px;
+      }
+      p {
+        text-transform: uppercase;
+        color: white;
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    padding: 0 5rem;
+  }
+  @media (min-width: 1024px) {
+    padding: 0 5rem;
+    flex-direction: row;
+  }
+  @media (min-width: 1280px) {
+    padding: 0 5rem;
+    gap: 8rem;
+  }
+  @media (min-width: 1440px) {
+    gap: 16rem;
+  }
+  @media (min-width: 1600px) {
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 10rem;
+  }
+}

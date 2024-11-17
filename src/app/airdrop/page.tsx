@@ -1,11 +1,17 @@
+"use client"
 import { FunctionComponent } from "react";
 import title from "../../../public/airdrop/title.png";
 import character from "../../../public/airdrop/character.png";
 import Image from "next/image";
 
 import styles from "./airdrop.module.scss";
-import Navbar from "@/components/Navbar";
+// import Navbar from "@/components/Navbar";
 import Link from "next/link";
+
+import dynamic from "next/dynamic";
+
+// import { Footer } from 'components';
+const Navbar = dynamic(() => import('../../components/Navbar'), { ssr: false });
 
 const Airdrop: FunctionComponent = () => {
   return (
@@ -14,19 +20,19 @@ const Airdrop: FunctionComponent = () => {
         className={`w-full min-h-[100vh] flex flex-col justify-center items-center font-[family-name:var(--font-harngton-sans)] ${styles.airdropSection}`}
       >
         <div className="absolute top-0 left-0 w-full ">
-          <Navbar />
+          <Navbar/>
         </div>
         <Image
           src={title}
           alt="airdrop title"
-          className="w-[320px] md:w-[450px] lg:w-[700px] z-10 relative"
+          className="w-[320px] md:w-[450px] lg:w-[700px] z-10 mt-4 md:mt-16 relative"
         />
         <div
           className={`flex justify-center items-center relative z-10 ${styles.imageContainer}`}
         >
           <Image src={character} alt="airdrop char" className="w-[320px]" />
         </div>
-        <div className="flex-container-between flex items-center relative z-10 mt-8 w-full md:mt-24 lg:mt-20 lg:w-auto">
+        <div className="flex-container-between flex items-center relative z-10 mt-8 w-full px-4 md:mt-20 lg:mt-16 lg:w-auto">
           <Link
             href="https://x.com/richpugtoken"
             target={"_blank"}
@@ -39,7 +45,7 @@ const Airdrop: FunctionComponent = () => {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <g clip-path="url(#clip0_276_129)">
+              <g clipPath="url(#clip0_276_129)">
                 <path
                   d="M2.95102 0C2.88402 0.068 2.81701 0.068 2.68201 0H2.95102Z"
                   fill="#292929"
@@ -76,7 +82,7 @@ const Airdrop: FunctionComponent = () => {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <g clip-path="url(#clip0_276_135)">
+              <g clipPath="url(#clip0_276_135)">
                 <path
                   d="M23 0.817422C22.8812 1.38195 22.7558 1.94527 22.6436 2.51161C21.8983 6.28097 21.156 10.0509 20.4126 13.8209C20.0765 15.5253 19.7381 17.2286 19.4075 18.9343C19.2257 19.8725 18.1072 20.3211 17.3535 19.7421C14.6185 17.6398 11.8858 15.5332 9.15319 13.4278C9.11839 13.4007 9.08599 13.3699 8.99898 13.295C9.05538 13.266 9.10759 13.2509 9.14419 13.2183C12.4997 10.1813 15.8546 7.14316 19.2071 4.10316C19.3283 3.99327 19.4483 3.87372 19.5365 3.73727C19.5899 3.65455 19.6325 3.48429 19.5893 3.4378C19.5263 3.36897 19.3703 3.33154 19.2749 3.3581C19.0913 3.40942 18.9118 3.49757 18.7498 3.60082C16.8153 4.83131 14.8843 6.06723 12.9521 7.30195C10.6605 8.76671 8.36772 10.2303 6.07912 11.6992C5.93811 11.7898 5.8211 11.8037 5.66449 11.75C4.10135 11.215 2.53582 10.6873 0.97088 10.1566C0.653452 10.0491 0.367827 9.88852 0.16501 9.61078C-0.0804116 9.27327 -0.0600099 8.93637 0.255018 8.66769C0.434433 8.51493 0.646251 8.38391 0.864671 8.29757C6.68698 5.99357 12.5099 3.69803 18.3316 1.40006C19.3055 1.01606 20.2746 0.619988 21.2532 0.248667C21.5575 0.133346 21.8815 0.0439879 22.2037 0.00957283C22.6586 -0.0387291 22.8104 0.0808181 22.9994 0.500441V0.816818L23 0.817422Z"
                   fill="white"
@@ -119,7 +125,7 @@ const Airdrop: FunctionComponent = () => {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <g clip-path="url(#clip0_276_139)">
+              <g clipPath="url(#clip0_276_139)">
                 <path
                   d="M0 7.33938C0.10724 6.82091 0.17974 6.29217 0.32776 5.7847C1.40318 2.09527 5.01987 -0.313748 8.9394 0.0331214C12.6822 0.364591 15.7408 3.20995 16.2679 6.84951C16.8638 10.9679 14.213 14.793 10.0813 15.7772C5.48659 16.8706 0.813359 13.825 0.10724 9.2776C0.0755208 9.07153 0.03625 8.86546 0 8.65939C0 8.21939 0 7.77939 0 7.33938Z"
                   fill="white"

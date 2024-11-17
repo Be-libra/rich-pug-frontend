@@ -1,6 +1,7 @@
+"use client"
 import Image from "next/image";
 import { FunctionComponent } from "react";
-import AboutUs from "./AboutUs/index"
+import AboutUs from "./AboutUs/index";
 
 import cover from "../../../public/home/cover.png";
 import styles from "./home.module.scss";
@@ -10,16 +11,26 @@ import Pugonomics from "./Pugonomics";
 import Roadmap from "./Roadmap";
 import Faq from "./Faq";
 import Whitepaper from "./Whitepaper";
-import Navbar from "../Navbar";
 import Footer from "../Footer";
+import dynamic from "next/dynamic";
+
+// import { Footer } from 'components';
+const Navbar = dynamic(() => import('../Navbar'), { ssr: false });
 
 const Home: FunctionComponent = () => {
   return (
     <>
       <div className="w-full flex flex-col justify-end relative">
-        <div className="absolute top-0 left-0 w-full"><Navbar /></div>
+        <div className="absolute top-0 left-0 w-full">
+          <Navbar />
+        </div>
         <div className="w-full">
-          <Image src={cover} alt="cover" objectFit="cover" className="w-auto md:w-full object-cover h-[70vh] md:h-auto" />
+          <Image
+            src={cover}
+            alt="cover"
+            objectFit="cover"
+            className="w-auto md:w-full object-cover h-[70vh] md:h-auto"
+          />
         </div>
 
         <div className="h-full -mt-20 relative">
@@ -44,13 +55,13 @@ const Home: FunctionComponent = () => {
         </div>
 
         <AboutUs />
-        <Download />
+        <div className="w-full hidden"><Download /></div>
         <PugToken />
         <Pugonomics />
         <Roadmap />
         <Faq />
         <Whitepaper />
-        <Footer/>
+        <Footer />
       </div>
     </>
   );
