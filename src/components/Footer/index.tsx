@@ -24,7 +24,7 @@ const Footer: FunctionComponent = () => {
           <div className="">
             <h1 className="text-[20px]">Got Questions?</h1>
             <Link
-              href="https://t.me/ruletsupport"
+              href="https://t.me/richpug"
               className="flex-container-between flex items-center justify-between decoration-transparent my-4 h-10 w-[15rem] rounded-lg bg-white md:w-[25rem] lg:w-[14rem]"
             >
               <input
