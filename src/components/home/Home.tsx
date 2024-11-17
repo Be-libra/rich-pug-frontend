@@ -55,7 +55,7 @@ const Home: FunctionComponent = () => {
         </div>
 
         <AboutUs />
-        <Download />
+        <div className="w-full hidden"><Download /></div>
         <PugToken />
         <Pugonomics />
         <Roadmap />

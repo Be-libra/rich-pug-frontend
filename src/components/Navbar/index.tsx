@@ -132,14 +132,14 @@ export default function Navbar() {
           {!address && (
             <a
               href="#"
-              className="text-md/6 font-semibold text-white ms-4  px-5 py-2 rounded-lg bg-[#A43BE1] whitespace-nowrap"
+              className="text-md/6 hidden font-semibold text-white ms-4  px-5 py-2 rounded-lg bg-[#A43BE1] whitespace-nowrap"
               onClick={() => open()}
             >
               Connect wallet
             </a>
           )}
           {address && (
-            <Popover>
+            <Popover className="hidden">
               <PopoverButton className="text-md/6 flex items-center font-semibold text-white ms-4  px-5 py-2 rounded-lg bg-[#A43BE1] whitespace-nowrap focus:outline-none hover:outline-none">
                 <FaUser className="text-md/6 text-white me-2" />
                 <p className="text-md/6 text-white">
