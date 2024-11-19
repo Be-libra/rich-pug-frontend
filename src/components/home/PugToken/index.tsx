@@ -36,7 +36,7 @@ const PugToken: FunctionComponent = () => {
               <div
                 className={`w-full my-3 flex justify-center items-center relative`}
               >
-                <Image src={character} alt="About Us Img" className="mt-5 mt-md-0" />
+                <Image src={character} alt="About Us Img" className="mt-5 mt-md-0 translate-x-[-180deg]" />
                 <div className="absolute w-[100%] h-[100%] top-0 left-[35%]">
                   <Image src={shadow} alt="shadow" />
                 </div>
