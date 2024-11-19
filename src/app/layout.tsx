@@ -1,21 +1,23 @@
-"use client"
+"use client";
 import localFont from "next/font/local";
 import "./globals.css";
 import "./common.scss";
 import "./styles/roadmap.scss";
 import "./styles/roadmapSlider.scss";
 import "./styles/faq.scss";
-import "./styles/footer.scss"
+import "./styles/footer.scss";
 import "./styles/sika.scss";
-import "./styles/buy.scss"
-import "./styles/howtobuy.scss"
+import "./styles/buy.scss";
+import "./styles/howtobuy.scss";
 // App.tsx
-import { createAppKit } from '@reown/appkit/react'
-import { SolanaAdapter } from '@reown/appkit-adapter-solana/react'
-import { solana, solanaTestnet, solanaDevnet } from '@reown/appkit/networks'
-import { PhantomWalletAdapter, SolflareWalletAdapter } from '@solana/wallet-adapter-wallets'
-import Head from "next/head";
-
+import { createAppKit } from "@reown/appkit/react";
+import { SolanaAdapter } from "@reown/appkit-adapter-solana/react";
+import { solana, solanaTestnet, solanaDevnet } from "@reown/appkit/networks";
+import {
+  PhantomWalletAdapter,
+  SolflareWalletAdapter,
+} from "@solana/wallet-adapter-wallets";
+import { Metadata } from "next";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -36,19 +38,19 @@ const harngton = localFont({
 
 // 0. Set up Solana Adapter
 const solanaWeb3JsAdapter = new SolanaAdapter({
-  wallets: [new PhantomWalletAdapter(), new SolflareWalletAdapter()]
-})
+  wallets: [new PhantomWalletAdapter(), new SolflareWalletAdapter()],
+});
 
 // 1. Get projectId from https://cloud.reown.com
-const projectId = '91bccda45f9e7dc9b50dc403a3eb0ec6'
+const projectId = "91bccda45f9e7dc9b50dc403a3eb0ec6";
 
 // 2. Create a metadata object - optional
 const walletConnectMetadata = {
-  name: 'Rich Pug',
-  description: 'AppKit Solana Example',
-  url: 'https://richpug.com', // origin must match your domain & subdomain
-  icons: ['https://richpug.com/images/favicon/favicon-16x16.png']
-}
+  name: "Rich Pug",
+  description: "AppKit Solana Example",
+  url: "https://richpug.com", // origin must match your domain & subdomain
+  icons: ["https://richpug.com/images/favicon/favicon-16x16.png"],
+};
 
 // 3. Create modal
 createAppKit({
@@ -59,9 +61,45 @@ createAppKit({
   features: {
     email: false,
     socials: false,
-    analytics: true // Optional - defaults to your Cloud configuration
-  }
-})
+    analytics: true, // Optional - defaults to your Cloud configuration
+  },
+});
+
+export const metadata: Metadata = {
+  title: "RICHPUG",
+  description: "The meme gaming token on $SOL.",
+  applicationName: "RICHPUG: The meme gaming token on $SOL",
+  manifest: "/favicon/site.webmanifest",
+  icons: {
+    icon: [
+      { url: "/favicon/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: { url: "/favicon/apple-touch-icon.png" },
+  },
+  openGraph: {
+    type: "website",
+    title: "RICHPUG: The meme gaming token on $SOL",
+    description: "Presale starting soon!",
+    url: "https://richpug.com",
+    siteName: "RICHPUG: The meme gaming token on $SOL",
+    images: [
+      {
+        url: "/images/banner.png",
+        width: 1200,
+        height: 630,
+        alt: "Presale starting soon!",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@richpug.com",
+    title: "RICHPUG",
+    description: "RICHPUG: The meme gaming token on $SOL",
+    images: ["/images/banner.png"],
+  },
+};
 
 export default function RootLayout({
   children,
@@ -70,89 +108,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-        <title>
-          RICHPUG: The meme gaming token on $SOL
-        </title>
-        <meta name='title' content='RICHPUG' />
-        <link rel="icon" type="image/x-icon" href="/images/favicon/favicon.ico"></link>
-        <meta
-          name='description'
-          content='The meme gaming token on $SOL.'
-        />
-        <meta
-          name='application-name'
-          content='RICHPUG: The meme gaming token on $SOL'
-        />
-        <meta name='apple-mobile-web-app-capable' content='yes' />
-        <meta name='apple-mobile-web-app-status-bar-style' content='default' />
-        <meta
-          name='apple-mobile-web-app-title'
-          content='RICHPUG: The meme gaming token on $SOL'
-        />
-        <meta name='format-detection' content='telephone=no' />
-        <meta name='mobile-web-app-capable' content='yes' />
-        <meta name='msapplication-tap-highlight' content='no' />
-
-        <link
-          rel='apple-touch-icon'
-          sizes='180x180'
-          href='/favicon/apple-touch-icon.png'
-        />
-        <link
-          rel='icon'
-          type='image/png'
-          sizes='32x32'
-          href='/favicon/favicon-32x32.png'
-        />
-        <link
-          rel='icon'
-          type='image/png'
-          sizes='16x16'
-          href='/favicon/favicon-16x16.png'
-        />
-        <link rel='manifest' href='/favicon/site.webmanifest' />
-        <link
-          rel='mask-icon'
-          href='/favicon/safari-pinned-tab.svg'
-          color='#d55b5b'
-        />
-        <meta name='msapplication-TileColor' content='#da532c' />
-        <meta name='theme-color' content='#ffffff'></meta>
-
-        <meta name='robots' content='index,follow' />
-        <link rel='canonical' href='https://richpug.com' />
-        <meta property='og:type' content={`${'website'}`} />
-        <meta
-          property='og:title'
-          content='RICHPUG: The meme gaming token on $SOL'
-        />
-        <meta property='og:description' content='Presale starting soon!' />
-        <meta property='og:url' content='https://richpug.com' />
-        <meta
-          property='og:site_name'
-          content='RICHPUG: The meme gaming token on $SOL'
-        />
-        <meta property='og:image' content='/images/Banner.png' />
-        <meta property='og:image:alt' content='Presale starting soon!' />
-        <meta property='og:image:width' content='1200' />
-        <meta property='og:image:height' content='630' />
-        <meta property='og:image:type' content='image/png' />
-
-        <meta name='twitter:card' content='summary_large_image' />
-        <meta name='twitter:site' content='@richpug.com' />
-        <meta
-          name='twitter:description'
-          content='RICHPUG: The meme gaming token on $SOL'
-        />
-        <meta name='twitter:title' content='RICHPUG' />
-        <meta property='twitter:image' content='/images/Banner.png' />
-        <meta
-          name='twitter:image:alt'
-          content='RICHPUG twitter image share'
-        />
-      </Head>
-
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${harngton.variable} antialiased`}
       >
