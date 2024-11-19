@@ -11,7 +11,7 @@ const AboutUs: FunctionComponent = () => {
   return (
     <>
       <div className="mt-20 w-full flex justify-center overflow-clip" id="about-us">
-        <div className="container flex justify-between items-center flex-wrap flex-row">
+        <div className="container flex justify-between items-center flex-wrap flex-row mx-3">
           <div className="basis-2/2 lg:basis-1/2 w-full">
             <div className="w-full my-3 px-3 xl:px-0 lg:pe-3">
               <Image src={title} alt="about us" width={200} className="mx-auto md:mx-0" />
@@ -44,7 +44,7 @@ const AboutUs: FunctionComponent = () => {
               className={`w-full my-3 flex justify-center items-center relative ${styles.imageContainer}`}
             >
               <Image src={character} alt="About Us Img" className="hidden md:block" />
-              <Image src={mobileCharacter} alt="About Us Img" className="block md:hidden" />
+              <Image src={mobileCharacter} alt="About Us Img" className="block mt-5 md:hidden" />
               <div className="absolute w-[100%] h-[100%] top-0 left-[20%] md:left-[45%]">
                 <Image src={shadow} alt="shadow" />
               </div>

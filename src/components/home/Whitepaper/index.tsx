@@ -28,7 +28,7 @@ const Whitepaper: FunctionComponent = () => {
                     our journey!
                   </p>
                   <button className="outline-none border-0 bg-[#A43BE1] px-6 py-3 rounded-md mt-6">
-                    Apply
+                    Coming Soon
                   </button>
                 </div>
               </div>
