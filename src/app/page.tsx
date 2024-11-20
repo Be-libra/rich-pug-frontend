@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     siteName: "RICHPUG: The meme gaming token on $SOL",
     images: [
       {
-        url: "/images/banner.png",
+        url: "/images/banner.jpeg",
         width: 1200,
         height: 630,
         alt: "Presale starting soon!",
@@ -33,10 +33,10 @@ export const metadata: Metadata = {
     site: "@richpug.com",
     title: "RICHPUG",
     description: "RICHPUG: The meme gaming token on $SOL",
-    images: ["/images/banner.png"],
+    images: ["/images/banner.jpeg"],
   },
   other: {
-    'og:image:type': 'image/png',
+    'og:image:type': 'image/jpeg',
     'og:image:width': '1200',
     'og:image:height': '630',
   }
