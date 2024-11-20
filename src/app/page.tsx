@@ -35,6 +35,11 @@ export const metadata: Metadata = {
     description: "RICHPUG: The meme gaming token on $SOL",
     images: ["/images/banner.png"],
   },
+  other: {
+    'og:image:type': 'image/png',
+    'og:image:width': '1200',
+    'og:image:height': '630',
+  }
 };
 
 // font-[family-name:var(--font-geist-mono)]
