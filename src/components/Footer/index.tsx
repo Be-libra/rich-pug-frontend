@@ -24,7 +24,7 @@ const Footer: FunctionComponent = () => {
           <div className="">
             <h1 className="text-[20px]">Got Questions?</h1>
             <Link
-              href="https://t.me/richpug"
+              href="https://t.me/richpugsupport"
               className="flex-container-between flex items-center justify-between decoration-transparent my-4 h-10 w-[15rem] rounded-lg bg-white md:w-[25rem] lg:w-[14rem]"
             >
               <input
@@ -48,7 +48,7 @@ const Footer: FunctionComponent = () => {
               Subscribe to our Monthly newsletter and be a part of our journey
               and global crypto updates.
             </p>
-            <div className="flex-container-between flex items-center justify-between flex items-center justify-between my-2 h-9 w-[15rem] rounded-lg bg-[#fff] p-[0.1rem] md:w-[25rem] lg:mt-10 lg:w-[15rem]">
+            <div className="flex-container-between flex items-center justify-between my-2 h-9 w-[15rem] rounded-lg bg-[#fff] p-[0.1rem] md:w-[25rem] lg:mt-10 lg:w-[15rem]">
               <input
                 type="text"
                 className="light-input-field h-9 rounded-lg"
@@ -195,19 +195,19 @@ const Footer: FunctionComponent = () => {
             </div>
             <div className="flex-container-between flex items-center justify-between mt-8 md:mt-24 lg:mt-0 lg:w-auto">
               <Link
-                href="https://ruletgames.gitbook.io/rulet.games-whitepaper/legal/privacy-policy"
+                href="https://rich-pug.gitbook.io/rich-pug-whitepaper/legal/privacy-policy"
                 className="decoration-transparent pe-3 lg:pe-5 border-r-2"
               >
                 <p>Privacy Policy</p>
               </Link>
               <Link
-                href="https://ruletgames.gitbook.io/rulet.games-whitepaper/legal/terms-of-services"
+                href="https://rich-pug.gitbook.io/rich-pug-whitepaper/legal/terms-of-services"
                 className="px-3 lg:px-5 decoration-transparent border-r-2"
               >
                 <p>Terms of Use</p>
               </Link>
               <Link
-                href="https://ruletgames.gitbook.io/rulet.games-whitepaper/support"
+                href="https://rich-pug.gitbook.io/rich-pug-whitepaper/support"
                 className="px-3 lg:px-5 decoration-transparent"
               >
                 <p>FAQ</p>

@@ -9,7 +9,7 @@ const PugToken: FunctionComponent = () => {
   return (
     <>
       <div className="w-full flex justify-center mt-20 overflow-x-clip">
-        <div className="container">
+        <div className="container mx-3">
           <div className="w-full flex justify-between items-center flex-wrap flex-row">
             <div className="basis-2/2 lg:basis-1/2 w-full">
               <div className="w-full my-3 px-3 md:px-0 lg:pe-3">
@@ -36,7 +36,7 @@ const PugToken: FunctionComponent = () => {
               <div
                 className={`w-full my-3 flex justify-center items-center relative`}
               >
-                <Image src={character} alt="About Us Img" />
+                <Image src={character} alt="About Us Img" className="mt-5 mt-md-0 translate-x-[-180deg]" />
                 <div className="absolute w-[100%] h-[100%] top-0 left-[35%]">
                   <Image src={shadow} alt="shadow" />
                 </div>

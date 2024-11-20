@@ -101,9 +101,9 @@ export default function Navbar() {
             <Link href="/" className="text-md/6 font-semibold text-white">
               Home
             </Link>
-            <a href="#" className="text-md/6 font-semibold text-white">
+            <Link href="https://rich-pug.gitbook.io/rich-pug-whitepaper" target="_blank" className="text-md/6 font-semibold text-white">
               Whitepaper
-            </a>
+            </Link>
             <Link
               href="/airdrop"
               className="text-md/6 font-semibold text-white"
@@ -212,7 +212,8 @@ export default function Navbar() {
                   Home
                 </Link>
                 <a
-                  href="#"
+                  href="https://rich-pug.gitbook.io/rich-pug-whitepaper"
+                  target={"_blank"}
                   onClick={() => setMobileMenuOpen(false)}
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:text-[#A43BE1]"
                 >
