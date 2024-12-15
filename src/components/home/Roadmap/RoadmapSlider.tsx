@@ -2,20 +2,6 @@ import React from 'react';
 
 const RoadmapSlider = () => {
 
-//
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
 
   return (
     <div className='w-full relative z-10 '>
@@ -43,9 +29,9 @@ const RoadmapSlider = () => {
             </div>
           </div>
           <div className='box-wrapper border-l-4 border-[#A43BE1] lg:rounded-br-3xl lg:rounded-tr-3xl lg:border-b-4 lg:border-l-0 lg:border-r-4 lg:border-t-4'>
-            <div className='d-flex grey-border-roadmap items-center justify-center rounded-3xl pt-1'>
-              <div className='flex h-[70px] max-w-[288px] flex-col items-center justify-center rounded-3xl bg-[#00000070] p-5 px-7 sm:w-full sm:min-w-full '>
-              Game App Launch (Beta)
+            <div className='d-flex border-roadmap items-center justify-center rounded-3xl pt-1'>
+              <div className='flex h-[70px] max-w-[288px] flex-col items-center justify-center rounded-3xl bg-[#0F0F0F] p-5 px-7 sm:w-full sm:min-w-full '>
+              Giveaways & Contests Live
               </div>
             </div>
           </div>
@@ -54,14 +40,14 @@ const RoadmapSlider = () => {
           <div className='box-wrapper border-l-4 border-[#A43BE1] lg:-mt-2 lg:rounded-bl-3xl lg:rounded-tl-3xl lg:border-b-4 lg:border-t-4'>
             <div className='d-flex grey-border-roadmap items-center justify-center rounded-3xl pt-1'>
               <div className='flex h-[70px] max-w-[288px] flex-col items-center justify-center rounded-3xl bg-[#00000070] p-5 px-7 sm:w-full sm:min-w-full '>
-              Airdrop Announcement
+               Game App Launch (Beta)
               </div>
             </div>
           </div>
           <div className='box-wrapper border-l-4 border-[#A43BE1] lg:-mt-2 lg:border-b-4 lg:border-l-0 lg:border-t-4'>
             <div className='d-flex grey-border-roadmap items-center justify-center rounded-3xl pt-1'>
               <div className='flex h-[70px] max-w-[288px] flex-col items-center justify-center rounded-3xl bg-[#00000070] p-5 px-7 sm:w-full sm:min-w-full '>
-              Giveaways & Contests Live
+              Airdrop Announcement
               </div>
             </div>
           </div>

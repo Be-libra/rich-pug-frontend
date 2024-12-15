@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image";
-import { FunctionComponent } from "react";
+import { FunctionComponent, useEffect, useState } from "react";
 import AboutUs from "./AboutUs/index";
 
 import cover from "../../../public/home/cover.png";
@@ -13,14 +13,22 @@ import Faq from "./Faq";
 import Whitepaper from "./Whitepaper";
 import Footer from "../Footer";
 import dynamic from "next/dynamic";
+import Loader from "../Loader";
 
 // import { Footer } from 'components';
 const Navbar = dynamic(() => import('../Navbar'), { ssr: false });
 
 const Home: FunctionComponent = () => {
+  const [loader, setLoader] = useState<boolean>(true)
+
+  useEffect(()=>{
+    setTimeout(()=>{
+      setLoader(false)
+    },5000)
+  },[])
   return (
     <>
-      <div className="w-full flex flex-col justify-end relative">
+      {loader?<Loader /> :<div className="w-full flex flex-col justify-end relative">
         <div className="absolute top-0 left-0 w-full">
           <Navbar />
         </div>
@@ -62,7 +70,7 @@ const Home: FunctionComponent = () => {
         <Faq />
         <Whitepaper />
         <Footer />
-      </div>
+      </div>}
     </>
   );
 };

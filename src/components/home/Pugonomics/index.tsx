@@ -2,7 +2,7 @@ import Image from "next/image";
 import { FunctionComponent } from "react";
 
 import title from "../../../../public/home/pugonomics/title.png";
-import pieChart from "../../../../public/home/pugonomics/pieChart.png";
+import pieChart from "../../../../public/home/pugonomics/pie-chart.png";
 import dog from "../../../../public/home/pugonomics/dog.png";
 
 import styles from "./pugonomics.module.scss";
@@ -21,7 +21,7 @@ const Pugonomics: FunctionComponent = () => {
                   src={pieChart}
                   objectFit="contain"
                   alt="About Us Img"
-                  className="scale-[0.85]"
+                  className="scale-[1] md:scale-[0.85] "
                 />
               </div>
             </div>
@@ -110,8 +110,6 @@ const Pugonomics: FunctionComponent = () => {
                           5% Marketing
                           <br />
                           12 months vesting
-                          <br />
-                          Fully Unlocked @TGE
                         </p>
                       </div>
                       <div>
@@ -132,8 +130,6 @@ const Pugonomics: FunctionComponent = () => {
                         <p className="text-lg font-semibold">
                           5% Team
                           <br />6 month cliff
-                          <br />
-                          Fully Unlocked @TGE
                         </p>
                       </div>
                       <div>

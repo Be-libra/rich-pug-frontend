@@ -123,12 +123,13 @@ export default function Navbar() {
               Contact Us
             </Link>
           </div>
-          <a
-            href="#"
+          <Link
+            href="https://drive.google.com/file/d/1-WbNO7XWrOIgpUpetawIb5Sc7n9pie8_/view?usp=sharing"
+            target={"_blank"}
             className="text-md/6 font-semibold text-white ms-12  px-5 py-2 rounded-lg bg-[#A43BE1]"
           >
             MANIFESTO
-          </a>
+          </Link>
           {!address && (
             <a
               href="#"
@@ -242,12 +243,13 @@ export default function Navbar() {
                 </Link>
               </div>
               <div className="py-6">
-                <a
-                  href="#"
+                <Link
+                target={"_blank"}
+                  href="https://drive.google.com/file/d/1-WbNO7XWrOIgpUpetawIb5Sc7n9pie8_/view?usp=sharing"
                   className="mx-0 block rounded-lg px-5 py-2.5 text-base/7 font-semibold text-white hover:bg-gray-50 bg-[#A43BE1] max-w-[135px]"
                 >
                   MANIFESTO
-                </a>
+                </Link>
               </div>
             </div>
           </div>
