@@ -1,5 +1,5 @@
 "use client"
-import { FunctionComponent } from "react";
+import { FunctionComponent, useEffect, useState } from "react";
 import title from "../../../public/airdrop/title.png";
 import character from "../../../public/airdrop/character.png";
 import Image from "next/image";
@@ -9,14 +9,22 @@ import styles from "./airdrop.module.scss";
 import Link from "next/link";
 
 import dynamic from "next/dynamic";
+import Loader from "@/components/Loader";
 
 // import { Footer } from 'components';
 const Navbar = dynamic(() => import('../../components/Navbar'), { ssr: false });
 
 const Airdrop: FunctionComponent = () => {
+  const [loader, setLoader] = useState<boolean>(true)
+
+  useEffect(()=>{
+    setTimeout(()=>{
+      setLoader(false)
+    },5000)
+  },[])
   return (
     <>
-      <div
+      {loader? <Loader /> :<div
         className={`w-full min-h-[100vh] flex flex-col justify-center items-center font-[family-name:var(--font-harngton-sans)] ${styles.airdropSection}`}
       >
         <div className="absolute top-0 left-0 w-full ">
@@ -25,14 +33,14 @@ const Airdrop: FunctionComponent = () => {
         <Image
           src={title}
           alt="airdrop title"
-          className="w-[320px] md:w-[450px] lg:w-[700px] z-10 mt-4 md:mt-16 relative"
+          className="w-[320px] md:w-[450px] lg:w-[700px] z-10 mt-10 md:mt-16 relative"
         />
         <div
           className={`flex justify-center items-center relative z-10 ${styles.imageContainer}`}
         >
           <Image src={character} alt="airdrop char" className="w-[320px]" />
         </div>
-        <div className="flex-container-between flex items-center relative z-10 mt-8 w-full px-4 md:mt-20 lg:mt-16 lg:w-auto">
+        <div className="flex-container-between flex items-center relative z-10 mt-8 mb-10 w-full px-4 md:mt-20 lg:mt-16 lg:w-auto">
           <Link
             href="https://x.com/richpugtoken"
             target={"_blank"}
@@ -114,40 +122,23 @@ const Airdrop: FunctionComponent = () => {
             </svg>
           </Link>
           <Link
-            href="https://medium.com/@richpugtoken"
-            target="_blank"
-            className="px-3 lg:px-5 decoration-transparent"
-          >
-            <svg
-              width="29"
-              height="16"
-              viewBox="0 0 29 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clipPath="url(#clip0_276_139)">
-                <path
-                  d="M0 7.33938C0.10724 6.82091 0.17974 6.29217 0.32776 5.7847C1.40318 2.09527 5.01987 -0.313748 8.9394 0.0331214C12.6822 0.364591 15.7408 3.20995 16.2679 6.84951C16.8638 10.9679 14.213 14.793 10.0813 15.7772C5.48659 16.8706 0.813359 13.825 0.10724 9.2776C0.0755208 9.07153 0.03625 8.86546 0 8.65939C0 8.21939 0 7.77939 0 7.33938Z"
-                  fill="white"
-                />
-                <path
-                  d="M29 9.3197C28.9441 9.92837 28.9244 10.5429 28.8225 11.1442C28.6684 12.0536 28.4713 12.9563 28.2598 13.8547C28.2032 14.0959 28.0567 14.3291 27.9057 14.5337C27.6882 14.8271 27.3755 14.8329 27.2003 14.5059C26.9594 14.0571 26.7487 13.5767 26.6301 13.0861C26.1558 11.12 26.0841 9.11583 26.1377 7.10648C26.1755 5.69553 26.2782 4.28752 26.6263 2.91178C26.7381 2.47177 26.8937 2.03177 27.1014 1.62696C27.3596 1.12463 27.7357 1.13196 28.0227 1.6189C28.3943 2.24884 28.5521 2.95138 28.6518 3.65758C28.7794 4.55446 28.8519 5.45793 28.9501 6.35847C28.9614 6.46554 28.9826 6.57187 28.9984 6.67894V9.31896L29 9.3197Z"
-                  fill="white"
-                />
-                <path
-                  d="M25.3275 8.00339C25.3124 9.81768 25.0435 11.5865 24.1728 13.2145C23.8858 13.7513 23.512 14.269 23.0785 14.7025C21.9645 15.8171 20.5425 15.7988 19.3976 14.7157C18.585 13.9471 18.0881 12.9923 17.7694 11.9561C16.8412 8.93254 16.8956 5.94198 18.1825 3.01302C18.4732 2.35155 18.8803 1.75681 19.4225 1.25667C20.5606 0.205796 21.9464 0.206529 23.0739 1.27207C24.0172 2.16308 24.5119 3.29682 24.86 4.4995C25.1915 5.64351 25.335 6.81392 25.3282 8.00266L25.3275 8.00339Z"
-                  fill="white"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0_276_139">
-                  <rect width="29" height="16" fill="white" />
-                </clipPath>
-              </defs>
-            </svg>
-          </Link>
+                href="https://www.reddit.com/r/RichPug/"
+                target="_blank"
+                className="px-3 lg:px-4 decoration-transparent"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  width="30"
+                  height="30"
+                  className="scale-[1.2]"
+                >
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm6.67-10a1.46 1.46 0 00-2.47-1 7.12 7.12 0 00-3.85-1.23L13 6.65l2.14.45a1 1 0 10.13-.61L12.82 6a.31.31 0 00-.37.24l-.74 3.47a7.14 7.14 0 00-3.9 1.23 1.46 1.46 0 10-1.61 2.39 2.87 2.87 0 000 .44c0 2.24 2.61 4.06 5.83 4.06s5.83-1.82 5.83-4.06a2.87 2.87 0 000-.44 1.46 1.46 0 00.81-1.33zm-10 1a1 1 0 112 0 1 1 0 01-2 0zm5.81 2.75a3.84 3.84 0 01-2.47.77 3.84 3.84 0 01-2.47-.77.27.27 0 01.38-.38A3.27 3.27 0 0012 16a3.28 3.28 0 002.09-.61.28.28 0 11.39.4v-.04zm-.18-1.71a1 1 0 111-1 1 1 0 01-1.01 1.04l.01-.04z" />
+                </svg>
+              </Link>
         </div>
-      </div>
+      </div>}
     </>
   );
 };

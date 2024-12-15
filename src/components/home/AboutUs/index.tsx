@@ -11,7 +11,7 @@ const AboutUs: FunctionComponent = () => {
   return (
     <>
       <div
-        className="mt-20 w-full flex justify-center overflow-clip"
+        className="mt-20 w-full flex justify-center overflow-x-clip"
         id="about-us"
       >
         <div className="container flex justify-between items-center flex-wrap flex-row mx-3">
@@ -54,7 +54,7 @@ const AboutUs: FunctionComponent = () => {
               <Image
                 src={character}
                 alt="About Us Img"
-                className="hidden md:block"
+                className="hidden md:block scale-[1.15] md:scale-[1]"
               />
               <Image
                 src={mobileCharacter}

@@ -15,8 +15,8 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    title: "RICHPUG: The meme gaming token on $SOL",
-    description: "Presale starting soon!",
+    title: "RICHPUG",
+    description: "The meme gaming token on $SOL",
     url: "https://richpug.com",
     siteName: "RICHPUG: The meme gaming token on $SOL",
     images: [
