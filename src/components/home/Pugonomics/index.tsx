@@ -130,6 +130,7 @@ const Pugonomics: FunctionComponent = () => {
                         <p className="text-lg font-semibold">
                           5% Team
                           <br />6 month cliff
+                          <br/>48 months vesting
                         </p>
                       </div>
                       <div>
