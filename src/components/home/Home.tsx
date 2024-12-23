@@ -28,7 +28,7 @@ const Home: FunctionComponent = () => {
   },[])
   return (
     <>
-      {!loader?<Loader /> :<div className="w-full flex flex-col justify-end relative">
+      {loader?<Loader /> :<div className="w-full flex flex-col justify-end relative">
         <div className="absolute top-0 left-0 w-full">
           <Navbar />
         </div>
